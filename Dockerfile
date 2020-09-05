@@ -1,6 +1,6 @@
 # ------Build phase------
 
-FROM node:alpine as builder
+FROM node:alpine
 
 # Change to app directory
 WORKDIR "/app"
@@ -19,5 +19,7 @@ RUN npm run build
 # ------Run phase------
 
 FROM nginx
-
-COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=0 /app/build /usr/share/nginx/html
+CMD sed -i -e 's/$PORT/'"$PORT"'/g' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
