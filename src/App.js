@@ -7,10 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hola hugo</h1>
-        <p>
-          Hello world
-        </p>
+        <h1>Deploy from docker</h1>
       </header>
     </div>
   );
