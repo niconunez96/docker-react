@@ -6,6 +6,7 @@ import Home from './Components/Components/Home';
 import ProyectosActuales from './Components/Components/ProyectosActuales';
 import TrabajosRealizados from './Components/Components/TrabajosRealizados';
 import Curriculum from './Components/Components/Curriculum';
+
 import './App.css';
 
 function App() {

@@ -1,6 +1,45 @@
 .home{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     height: 90vh;
+    gap: 5%;
+}
+
+.feed{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 3% 3% 3% 3%;
+}
+
+.feed-image{
+    background-image: url("../../images/construction.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.feed-article{
+    background-color: white;
+    box-shadow: rgba(44, 39, 39, 0.4) 1em 1em;
+    padding: 2em;
+}
+
+.feed-article-title{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.feed-article-paragraph{
+    margin-bottom: 1em;
+}
+
+.feed-article-btn{
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    padding: 2% 4% 2% 4%
 }

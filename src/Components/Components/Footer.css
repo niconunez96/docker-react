@@ -1,0 +1,20 @@
+.contactUs{
+    background-color: teal;
+    padding: 2%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+}
+
+.contactUs-title{
+    text-align: center;
+}
+
+.contactUs-media{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: .7em;
+}
