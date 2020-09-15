@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5%;
+    padding: 0% 5% 0 5%;
+    background-color: teal;
+    height: 3em;
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: white;
+}

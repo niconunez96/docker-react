@@ -1,15 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Navbar from './Components/HOC/Navbar';
+import Home from './Components/Components/Home';
+import ProyectosActuales from './Components/Components/ProyectosActuales';
+import TrabajosRealizados from './Components/Components/TrabajosRealizados';
+import Curriculum from './Components/Components/Curriculum';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Deploy from docker</h1>
-        <p>Adding feature</p>
-      </header>
+    <div className="appContainer">
+      <Router>
+        <Switch>
+            <Route path="/cv">
+              {Navbar(Curriculum)}
+            </Route>
+            <Route path="/trabajos">
+              {Navbar(TrabajosRealizados)}
+            </Route>
+            <Route path="/proyectos-actuales">
+              {Navbar(ProyectosActuales)}
+            </Route>
+            <Route path="/">
+              {Navbar(Home)}
+            </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
