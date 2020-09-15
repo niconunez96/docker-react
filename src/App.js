@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Deploy from docker</h1>
+        <p>Adding feature</p>
       </header>
     </div>
   );
