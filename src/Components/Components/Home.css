@@ -1,0 +1,58 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: 140vh;
+    gap: 5%;
+}
+
+.currentProjects{
+    padding: 0 2em 0 2em;
+    height: 40vh;
+    margin-bottom: 10%;
+}
+
+.feed{
+    height: 80vh;
+}
+
+.feed-image{
+    background-image: url("../../images/construction.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.feed-article{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(176, 204, 190, 0.719);
+    height: 40%;
+    width: 60%;
+    padding: 3%;
+    /* box-shadow: rgba(44, 39, 39, 0.4) 1em 1em; */
+}
+
+.feed-article-title{
+    font-size: 2em;
+}
+
+.feed-article-paragraph{
+    font-size: 1em;
+    margin: 3% 0 6% 0;
+}
+
+.feed-article-btn{
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+    padding: 1% 2% 1% 2%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

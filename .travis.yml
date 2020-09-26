@@ -1,0 +1,15 @@
+language: generic
+sudo: required
+services:
+- docker
+before_install:
+- docker build -t nicolasnunez96/docker-react -f Dockerfile.dev .
+script:
+- docker run -e CI=true nicolasnunez96/docker-react npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: ivt5R7exLVWjxshzjFP7nU3ArhUWxneaad/XdUGJNzKiLU+qNkJqLg/XzFK4FGLRPG14Y9lUQtWmrsVgK5PQDmMfE0T8yq5N8RCOmkzxZqu9GjTihy2ua6jtzR9N12CySMspLjQO/CEb89LtwbwFG74NdD6OJff6cB6UDiox9qEl0hvevyMa3IyrnjJS0k+gdnJhE6J2C5Xe1b9hzaiVsH2gxiHyxuQly28cFMztOlx9+aZE7lDtBB7um/UZen7H/VGtVhI9AHL4vyjntyBhLCIIWIgrMPpQEuYnwR7TAJqR7OFlwizLHwEPttwoa0r8DW5Tke6MKUhecAKFJ4C2fD2hsYLTX8qxqczbufrHlbNcTnaZg5fRWvbHqYMN2Xs/mnJ4GX5unzLMrtrh4dlOcudX5qnaO6CO1fmPehzKY9rlWJtkBOtw4BhiweFfuUpxtALO/Fvnf7NsWogT56KBBzbi5vlmKyfCEZ4QrGdoCm6mCoVE9LS30BFMnnsWmbuNecFyxFEswG/3UHUPy0SDaT32cIToO+vbLC8tAlPXUpYz/tr+W47bKGx6JIyT3F8HW1V0OY2mjCf/D5Xb7LvtTaNgH/YQvKhsjudHHynnYbad/LDc9urFGtuDpZOY8x7wEMFgdBu+Np7uFJet4NDDOrBSl3minjXU9AOeiZsCg2w=
+  app: construcciones-portfolio
+  on:
+    branch: master
