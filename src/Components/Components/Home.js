@@ -20,7 +20,7 @@ const Home = (props) => {
                             </p>
                             <Link className="feed-article-btn" to="/trabajos">
                                 Nuestros trabajos
-                                <i className="fa fa-building" aria-hidden="true">
+                                <i className="fa fa-building ml-1" aria-hidden="true">
                                 </i>
                             </Link>
                         </article>

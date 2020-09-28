@@ -6,14 +6,14 @@ const Navbar = (Component) => (props) => {
 
     const getNavbarClass = (path) => {
         const currentPath = document.location.pathname;
-        return currentPath === path ? 'navbar-item current-navbar-item':'navbar-item'
+        return currentPath.includes(path) ? 'navbar-item current-navbar-item':'navbar-item'
     }
 
     return (
         <div>
             <nav className="navbar">
-                <div className={getNavbarClass("/")}>
-                    <Link to="/" className="navbar-link">Inicio</Link>
+                <div className={getNavbarClass("/home")}>
+                    <Link to="/home" className="navbar-link">Inicio</Link>
                 </div>
                 <div className={getNavbarClass("/aboutus")}>
                     <Link to="/aboutus" className="navbar-link">

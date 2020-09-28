@@ -16,7 +16,7 @@ const AboutUs = (props) => {
                     <section className="ourServices-list">
                         <article className="construction">
                             <h4>
-                                <bold>Construcción</bold>
+                                Construcción
                             </h4>
                             <ul>
                                 <li>
@@ -39,7 +39,7 @@ const AboutUs = (props) => {
                         </article>
                         <article className="electricity">
                             <h4>
-                                <bold>Electricidad</bold>
+                                Electricidad
                             </h4>
                             <ul>
                                 <li>
@@ -50,7 +50,7 @@ const AboutUs = (props) => {
                         </article>
                         <article className="wineries">
                             <h4>
-                                <bold>Servicio a bodegas</bold>
+                                Servicio a bodegas
                             </h4>
                             <ul>
                                 <li>
@@ -73,7 +73,7 @@ const AboutUs = (props) => {
                         </article>
                         <article className="comunication">
                             <h4>
-                                <bold>Telecomunicaciones</bold>
+                                Telecomunicaciones
                             </h4>
                             <ul>
                                 <li>

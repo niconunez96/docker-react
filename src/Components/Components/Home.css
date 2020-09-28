@@ -1,3 +1,7 @@
+.ml-1{
+    margin-left: 1em;
+}
+
 .home{
     display: grid;
     grid-template-columns: 1fr;
@@ -7,13 +11,11 @@
 }
 
 .currentProjects{
-    padding: 0 2em 0 2em;
-    height: 40vh;
+    padding: 0 3% 0 3%;
     margin-bottom: 10%;
 }
 
 .feed{
-    height: 80vh;
 }
 
 .feed-image{
@@ -31,18 +33,17 @@
     margin-left: 5%;
     margin-bottom: 5%;
     background-color: rgba(176, 204, 190, 0.719);
-    height: 40%;
+    height: 45%;
     width: 60%;
     padding: 3%;
-    /* box-shadow: rgba(44, 39, 39, 0.4) 1em 1em; */
 }
 
 .feed-article-title{
-    font-size: 2em;
+    font-size: 200%;
 }
 
 .feed-article-paragraph{
-    font-size: 1em;
+    font-size: 100%;
     margin: 3% 0 6% 0;
 }
 
@@ -52,7 +53,39 @@
     background-color: teal;
     padding: 1% 2% 1% 2%;
     width: 20%;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+}
+
+
+@media only screen and (max-width: 700px) {
+    .feed-image{
+        background-image: url("../../images/construction.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .feed-article{
+        margin: 0;
+        background-color: rgba(176, 204, 190, 0.719);
+        height: 40%;
+        width: 80%;
+        padding: 3%;
+    }
+
+    .feed-article-title{
+        font-size: 150%;
+    }
+    
+    .feed-article-paragraph{
+        font-size: 90%;
+        margin: 3% 0 6% 0;
+    }
 }

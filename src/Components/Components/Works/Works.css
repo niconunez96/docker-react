@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+.works-container{
+    padding: 3%;
+}
+
+.works-selector{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3%;
+}
+
+.works-title{
+    font-size: 1.8em
+}
+
+.work-tag{
+    margin: 0 1em 0 1em;
+    padding: .4em;
+    background-color: rgba(54, 179, 54, 0.884);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
