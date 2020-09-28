@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from './Footer'
-import './Nosotros.css'
+import './AboutUs.css'
 import BodegaLopez from '../../images/clients/bodega-lopez.png'
 import ObrasAndinas from '../../images/clients/oa-logo.png'
 
-const Nosotros = (props) => {
+const AboutUs = (props) => {
     return (
         <>
             <div className="aboutUs">
@@ -115,4 +115,4 @@ const Nosotros = (props) => {
 };
 
 
-export default Nosotros;
+export default AboutUs;

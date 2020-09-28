@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Navbar from './Components/HOC/Navbar';
 import Home from './Components/Components/Home';
-import ProyectosActuales from './Components/Components/ProyectosActuales';
-import TrabajosRealizados from './Components/Components/TrabajosRealizados';
-import Nosotros from './Components/Components/Nosotros';
+import Works from './Components/Components/Works';
+import AboutUs from './Components/Components/AboutUs';
 
 import './App.css';
 
@@ -14,14 +13,11 @@ function App() {
     <div className="appContainer">
       <Router>
         <Switch>
-            <Route path="/nosotros">
-              {Navbar(Nosotros)}
+            <Route path="/aboutus">
+              {Navbar(AboutUs)}
             </Route>
-            <Route path="/trabajos">
-              {Navbar(TrabajosRealizados)}
-            </Route>
-            <Route path="/proyectos-actuales">
-              {Navbar(ProyectosActuales)}
+            <Route path="/works">
+              {Navbar(Works)}
             </Route>
             <Route path="/">
               {Navbar(Home)}

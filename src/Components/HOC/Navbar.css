@@ -1,18 +1,25 @@
 .navbar{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    gap: 2.5%;
+    /* align-items: center; */
+    /* gap: 2.5%; */
     padding: 0% 5% 0 5%;
     background-color: teal;
     height: 3em;
 }
 
 .navbar-item{
-    text-decoration: none;
-    color: white;
+    padding: 0 1em 0 1em;
 }
 
-.current{
-    text-decoration: underline;
+.current-navbar-item{
+    background-color: rgba(139, 204, 182, 0.616);
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    top: 25%;
 }
