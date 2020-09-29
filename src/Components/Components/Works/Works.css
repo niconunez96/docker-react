@@ -29,3 +29,30 @@ a:visited{
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 700px) {
+    .works-selector{
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    .works-title{
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    .work-tags{
+        display: flex;
+        justify-content: flex-start;
+        gap: 2%;
+    }
+
+    .work-tag{
+        margin: 0;
+        padding: .4em;
+        background-color: rgba(54, 179, 54, 0.884);
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -6,7 +6,7 @@ import ObrasAndinas from '../../images/clients/oa-logo.png'
 
 const AboutUs = (props) => {
     return (
-        <>
+        <div className="aboutUs-container">
             <div className="aboutUs">
                 <section className="ourServices">
                     <h3 className="ourServices-title">
@@ -110,7 +110,7 @@ const AboutUs = (props) => {
                 </section>
             </div>
             <Footer></Footer>
-        </>
+        </div>
     )
 };
 
