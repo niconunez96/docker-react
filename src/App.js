@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 import Navbar from './Components/HOC/Navbar';
 import Home from './Components/Components/Home';
@@ -21,7 +21,7 @@ function App() {
             <Route path="/works/pole-placement">
               <WorkGalleryWithNavbar name="Colocacion de poleas"/>
             </Route>
-            <Route path="/works/street/">
+            <Route path="/works/street">
               <WorkGalleryWithNavbar name="Cruces de calle"/>
             </Route>
             <Route path="/works">
@@ -29,6 +29,9 @@ function App() {
             </Route>
             <Route path="/home">
               {Navbar(Home)}
+            </Route>
+            <Route path="/">
+              <Redirect to="/home"></Redirect>
             </Route>
         </Switch>
       </Router>
