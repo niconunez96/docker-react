@@ -11,6 +11,7 @@ import './App.css';
 
 function App() {
   const WorkGalleryWithNavbar = Navbar(WorkGallery);
+  const WorksWithNavbar = Navbar(Works)
   return (
     <div className="appContainer">
       <Router>
@@ -25,7 +26,7 @@ function App() {
               <WorkGalleryWithNavbar name="Cruces de calle"/>
             </Route>
             <Route path="/works">
-              {Navbar(Works)}
+              <WorksWithNavbar displayDefaultGallery={true}/>
             </Route>
             <Route path="/home">
               {Navbar(Home)}

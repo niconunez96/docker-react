@@ -4,6 +4,16 @@ import { Link } from 'react-router-dom'
 import './Works.css'
 
 const Works = (props) => {
+    
+    const getDefaultGallery = () => {
+        return (
+            <section className="default-gallery">default gallery</section>
+        )
+    }
+
+    const DefaultGallery = props.displayDefaultGallery
+                ? getDefaultGallery()
+                : null
     return (
         <section className="works-container">
             <div className="works-selector">
@@ -21,6 +31,7 @@ const Works = (props) => {
                     </label>
                 </div>
             </div>
+            {DefaultGallery}
         </section>
     )
 };

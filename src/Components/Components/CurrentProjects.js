@@ -10,7 +10,7 @@ const CurrentProjects = (props) => {
     )
     return (
         <div>
-            <h4 className="projects-title">Proyectos actuales</h4>
+            <h3 className="projects-title">Proyectos actuales</h3>
             <section className="projects-container">
                 {projects}
             </section>

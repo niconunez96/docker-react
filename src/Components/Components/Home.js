@@ -6,7 +6,7 @@ import './Home.css';
 
 const Home = (props) => {
     return (
-        <div>
+        <div className="home-container">
             <div className="home">
                 <section className="feed">
                     <div className="feed-image">
@@ -18,7 +18,7 @@ const Home = (props) => {
                             a través de personal altamente capacitado y motivado,
                             utilizando tecnología de primer nivel.
                             </p>
-                            <Link className="feed-article-btn" to="/trabajos">
+                            <Link className="feed-article-btn" to="/works">
                                 Nuestros trabajos
                                 <i className="fa fa-building ml-1" aria-hidden="true">
                                 </i>

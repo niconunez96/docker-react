@@ -1,4 +1,12 @@
 .project-card{
-    height: 50px;
-    width: 80px;
+    height: 30%;
+    width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-card{
+        height: 30%;
+        width: 100%;
+        background-color: teal;
+    }
 }
