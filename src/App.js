@@ -7,6 +7,8 @@ import Works from './Components/Components/Works/Works';
 import WorkGallery from './Components/Components/Works/WorkGallery';
 import AboutUs from './Components/Components/AboutUs';
 
+import { WIRE_PIPES, STREET } from './Components/Constants/Works'
+
 import './App.css';
 
 function App() {
@@ -19,11 +21,11 @@ function App() {
             <Route path="/aboutus">
               {Navbar(AboutUs)}
             </Route>
-            <Route path="/works/pole-placement">
-              <WorkGalleryWithNavbar name="Colocacion de poleas"/>
+            <Route path="/works/pipes-wire">
+              <WorkGalleryWithNavbar name="Colocación de cables y tuberias" images={WIRE_PIPES}/>
             </Route>
             <Route path="/works/street">
-              <WorkGalleryWithNavbar name="Cruces de calle"/>
+              <WorkGalleryWithNavbar name="Cruces de calle" images={STREET}/>
             </Route>
             <Route path="/works">
               <WorksWithNavbar displayDefaultGallery={true}/>

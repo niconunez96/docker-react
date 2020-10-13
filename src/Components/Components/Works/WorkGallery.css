@@ -1,0 +1,33 @@
+.work-gallery-container{
+    display: grid;
+    grid-template-rows: 1fr minmax(3fr, auto) 1fr;
+}
+
+.work-gallery{
+    padding: 0 3% 0 3%;
+    margin-bottom: 3%;
+}
+
+.work-gallery-title{
+    margin-bottom: 3%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work-card{
+    margin: 0 3% 5% 3%;
+}
+
+.work-info-title{
+    margin: 2% 0 2% 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

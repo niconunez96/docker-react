@@ -7,7 +7,11 @@ const Works = (props) => {
     
     const getDefaultGallery = () => {
         return (
-            <section className="default-gallery">default gallery</section>
+            <section className="default-gallery">
+                <h3>
+                    Galeria
+                </h3>
+            </section>
         )
     }
 
@@ -15,24 +19,26 @@ const Works = (props) => {
                 ? getDefaultGallery()
                 : null
     return (
-        <section className="works-container">
-            <div className="works-selector">
-                <h2 className="works-title">Trabajos realizados:</h2>
-                <div className="work-tags">
-                    <label className="work-tag">
-                        <Link to="/works/pole-placement/">
-                            Colocacion de postes
-                        </Link>
-                    </label>
-                    <label className="work-tag">
-                        <Link to="/works/street/">
-                            Cruces de calle
-                        </Link>
-                    </label>
+        <>
+            <section className="works-container">
+                <div className="works-selector">
+                    <h2 className="works-title">Trabajos realizados:</h2>
+                    <div className="work-tags">
+                        <label className="work-tag">
+                            <Link to="/works/pipes-wire/">
+                                Cables y tuberias
+                            </Link>
+                        </label>
+                        <label className="work-tag">
+                            <Link to="/works/street/">
+                                Cruces de calle
+                            </Link>
+                        </label>
+                    </div>
                 </div>
-            </div>
+            </section>
             {DefaultGallery}
-        </section>
+        </>
     )
 };
 
