@@ -12,7 +12,6 @@ import { WIRE_PIPES, STREET } from './Components/Constants/Works'
 import './App.css';
 
 function App() {
-  const WorkGalleryWithNavbar = Navbar(WorkGallery);
   const WorksWithNavbar = Navbar(Works)
   return (
     <div className="appContainer">
@@ -22,13 +21,19 @@ function App() {
               {Navbar(AboutUs)}
             </Route>
             <Route path="/works/pipes-wire">
-              <WorkGalleryWithNavbar name="Colocación de cables y tuberias" images={WIRE_PIPES}/>
+              <WorksWithNavbar>
+                <WorkGallery name="Colocación de cables y tuberias" images={WIRE_PIPES}/>
+              </WorksWithNavbar>
             </Route>
             <Route path="/works/street">
-              <WorkGalleryWithNavbar name="Cruces de calle" images={STREET}/>
+              <WorksWithNavbar>
+                <WorkGallery name="Cruces de calle" images={STREET}/>
+              </WorksWithNavbar>
             </Route>
             <Route path="/works">
-              <WorksWithNavbar displayDefaultGallery={true}/>
+              <WorksWithNavbar>
+                <WorkGallery name="Galería" images={[...STREET, ...WIRE_PIPES]}/>
+              </WorksWithNavbar>
             </Route>
             <Route path="/home">
               {Navbar(Home)}

@@ -5,19 +5,6 @@ import './Works.css'
 
 const Works = (props) => {
     
-    const getDefaultGallery = () => {
-        return (
-            <section className="default-gallery">
-                <h3>
-                    Galeria
-                </h3>
-            </section>
-        )
-    }
-
-    const DefaultGallery = props.displayDefaultGallery
-                ? getDefaultGallery()
-                : null
     return (
         <>
             <section className="works-container">
@@ -37,7 +24,7 @@ const Works = (props) => {
                     </div>
                 </div>
             </section>
-            {DefaultGallery}
+            {props.children}
         </>
     )
 };

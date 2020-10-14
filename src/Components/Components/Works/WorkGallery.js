@@ -1,6 +1,5 @@
 import React from 'react';
 import "./WorkGallery.css";
-import Works from './Works';
 import Footer from '../../Components/Footer';
 
 
@@ -22,7 +21,6 @@ const WorkGallery = (props) => {
     ))
     return (
         <div className="work-gallery-container">
-            <Works displayDefaultGallery={false}/>
             <section className="work-gallery">
                 <h3 className="work-gallery-title">{props.name}</h3>
                 <div className="gallery">
