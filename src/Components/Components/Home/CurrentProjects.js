@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project'
-import { CURRENT_PROJECTS_IMG } from '../Constants/Projects'
+import { CURRENT_PROJECTS_IMG } from '../../Constants/Projects'
 
 import './CurrentProjects.css'
 

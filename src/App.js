@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
 import Navbar from './Components/HOC/Navbar';
-import Home from './Components/Components/Home';
+import Home from './Components/Components/Home/Home';
 import Works from './Components/Components/Works/Works';
 import WorkGallery from './Components/Components/Works/WorkGallery';
 import AboutUs from './Components/Components/AboutUs';
