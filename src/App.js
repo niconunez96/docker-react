@@ -7,7 +7,7 @@ import Works from './Components/Components/Works/Works';
 import WorkGallery from './Components/Components/Works/WorkGallery';
 import AboutUs from './Components/Components/AboutUs';
 
-import { WIRE_PIPES, STREET } from './Components/Constants/Works'
+import { WIRE_PIPES, STREET, CHAMBERS } from './Components/Constants/Works'
 
 import './App.css';
 
@@ -30,9 +30,14 @@ function App() {
                 <WorkGallery name="Cruces de calle" images={STREET}/>
               </WorksWithNavbar>
             </Route>
+            <Route path="/works/chambers">
+              <WorksWithNavbar>
+                <WorkGallery name="Cámaras" images={CHAMBERS}/>
+              </WorksWithNavbar>
+            </Route>
             <Route path="/works">
               <WorksWithNavbar>
-                <WorkGallery name="Galería" images={[...STREET, ...WIRE_PIPES]}/>
+                <WorkGallery name="Galería" images={[...STREET, ...CHAMBERS, ...WIRE_PIPES]}/>
               </WorksWithNavbar>
             </Route>
             <Route path="/home">

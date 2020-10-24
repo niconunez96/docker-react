@@ -21,6 +21,11 @@ const Works = (props) => {
                                 Cruces de calle
                             </Link>
                         </label>
+                        <label className="work-tag">
+                            <Link to="/works/chambers/">
+                                Cámaras
+                            </Link>
+                        </label>
                     </div>
                 </div>
             </section>
