@@ -1,27 +1,71 @@
-.contactUs{
+.contactUsContainer{
     background-color: teal;
-    padding: 2%;
+    display: flex;
+    height: 12rem;
     color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2em;
+    padding-bottom: 2%;
+}
+
+.contactUs{
+    width: 50%;
+    padding: 2%;
 }
 
 .contactUs-title{
-    text-align: center;
+    margin-left: 25%;
 }
 
 .contactUs-media{
     display: flex;
-    justify-content: center;
-    gap: 2em;
-    font-size: .7em;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+.media-link{
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    gap: 3%;
+    margin-top: 2%;
 }
 
 .address{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1%;
+}
+
+.address-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .contactUsContainer{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
+    }
+
+    .contactUs-title{
+        margin-left: 0%;
+        text-align: center;
+    }
+    
+    .contactUs-media{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+
+    .address{
+        border-top: 1px solid white;
+        margin-top: 3%;
+        padding-top: 3%;
+    }
 }

@@ -23,7 +23,6 @@ ul{
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "construction wineries"
                          "comunication electricity";
-    /* gap: 3%; */
 }
 
 .construction{
