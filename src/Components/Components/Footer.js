@@ -6,11 +6,11 @@ const Footer = (props) => {
     return (
         <section className="contactUsContainer">
             <section className="contactUs">
-                <h3 className="contactUs-title">Contactanos</h3>
+                <h3 className="contactUs-title">Contáctanos</h3>
                 <div className="contactUs-media">
                     <a className="media-link" href="https://wa.link/l5b15d" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-                        2613749180
+                        261 556-5192
                     </a>
                     <a className="media-link" href="https://www.linkedin.com/in/jorge-sainer-lizarazo-254a621aa/" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
