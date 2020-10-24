@@ -6,7 +6,7 @@ import Footer from '../../Components/Footer';
 const WorkGallery = (props) => {
     const works = props.images.map((image, index) => (
         <div key={index} className="work-card">
-            <img src={image} height="300rem" width="100%" className="work-image"></img>
+            <img alt="project" src={image} height="300rem" width="100%" className="work-image"></img>
             <div className="work-info">
                 <h3 className="work-info-title">
                     Title example

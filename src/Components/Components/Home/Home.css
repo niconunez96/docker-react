@@ -5,14 +5,12 @@
 .home{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
-    height: 150vh;
-    gap: 5%;
+    height: 100%;
 }
 
 .currentProjects{
+    margin-top: 3%;
     padding: 0 3% 0 3%;
-    margin-bottom: 10%;
 }
 
 .feed{
@@ -23,7 +21,7 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: 30rem;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -59,12 +57,18 @@
 @media only screen and (max-width: 500px) {
     .home-container{
         display: grid;
-        grid-template-rows: 9fr 1fr;
-        gap: 2%;
+        grid-template-columns: 1fr;
     }
+
     .home{
-        gap: 3%;
     }
+
+    .feed-image{
+        height: 30rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
     .feed-article-btn{
         text-decoration: none;
         color: white;
