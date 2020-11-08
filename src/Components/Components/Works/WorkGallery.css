@@ -18,7 +18,22 @@
 }
 
 .work-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 3%;
     margin: 0 3% 5% 3%;
+    transition: 0.3s;
+}
+  
+.work-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.work-image{
+    border-radius: 3% 3% 0 0;
+}
+
+.work-info {
+    margin: 0 0 5% 5%;
 }
 
 .work-info-title{
@@ -29,5 +44,9 @@
     .gallery{
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .work-card{
+        margin: 0 0 5% 0;
     }
 }
