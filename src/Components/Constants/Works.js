@@ -23,30 +23,170 @@ import Image20 from '../../images/works/chambers/camaras8.jpeg'
 
 
 export const WIRE_PIPES = [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8,
-    Image9,
-    Image10,
+    {
+        'id': 1,
+        'imageUrl': Image1,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 2,
+        'imageUrl': Image2,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 3,
+        'imageUrl': Image3,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 4,
+        'imageUrl': Image4,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 5,
+        'imageUrl': Image5,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 6,
+        'imageUrl': Image6,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 7,
+        'imageUrl': Image7,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 8,
+        'imageUrl': Image8,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 9,
+        'imageUrl': Image9,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 10,
+        'imageUrl': Image10,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
 ];
 
 export const STREET = [
-    Image11,
-    Image12,
+    {
+        'id': 11,
+        'imageUrl': Image11,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cruce de calle",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 12,
+        'imageUrl': Image12,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cruce de calle",
+        'description': "Sin descripción"
+    },
 ];
 
 export const CHAMBERS = [
-    Image13,
-    Image14,
-    Image15,
-    Image16,
-    Image17,
-    Image18,
-    Image19,
-    Image20,
+    {
+        'id': 13,
+        'imageUrl': Image13,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 14,
+        'imageUrl': Image14,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 15,
+        'imageUrl': Image15,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 16,
+        'imageUrl': Image16,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 17,
+        'imageUrl': Image17,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 18,
+        'imageUrl': Image18,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 19,
+        'imageUrl': Image19,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 20,
+        'imageUrl': Image20,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cámara de tapa de fundición",
+        'description': "Sin descripción"
+    },
 ]

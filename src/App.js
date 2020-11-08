@@ -22,22 +22,22 @@ function App() {
             </Route>
             <Route path="/works/pipes-wire">
               <WorksWithNavbar>
-                <WorkGallery name="Colocación de cables y tuberias" images={WIRE_PIPES}/>
+                <WorkGallery name="Colocación de cables y tuberias" works={WIRE_PIPES}/>
               </WorksWithNavbar>
             </Route>
             <Route path="/works/street">
               <WorksWithNavbar>
-                <WorkGallery name="Cruces de calle" images={STREET}/>
+                <WorkGallery name="Cruces de calle" works={STREET}/>
               </WorksWithNavbar>
             </Route>
             <Route path="/works/chambers">
               <WorksWithNavbar>
-                <WorkGallery name="Cámaras" images={CHAMBERS}/>
+                <WorkGallery name="Cámaras" works={CHAMBERS}/>
               </WorksWithNavbar>
             </Route>
             <Route path="/works">
               <WorksWithNavbar>
-                <WorkGallery name="Galería" images={[...STREET, ...CHAMBERS, ...WIRE_PIPES]}/>
+                <WorkGallery name="Galería" works={[...STREET, ...CHAMBERS, ...WIRE_PIPES]}/>
               </WorksWithNavbar>
             </Route>
             <Route path="/home">

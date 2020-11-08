@@ -3,28 +3,26 @@ import "./WorkGallery.css";
 import Footer from '../../Components/Footer';
 
 
-const WorkGallery = (props) => {
-    const works = props.images.map((image, index) => (
-        <div key={index} className="work-card">
-            <img alt="project" src={image} height="300rem" width="100%" className="work-image"></img>
+const WorkGallery = ({ name, works }) => {
+    const workCards = works.map((work) => (
+        <div key={work.id} className="work-card">
+            <img alt="project" src={work.imageUrl} height="300rem" width="100%" className="work-image"></img>
             <div className="work-info">
                 <h3 className="work-info-title">
-                    Title example
+                    {work.title}
                 </h3>
-                <p className="work-info-description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi laborum nisi adipisci atque autem nobis consectetur 
-                    reprehenderit eveniet obcaecati sapiente.
-                </p>
+                <h5>Ubicación: {work.location}</h5>
+                <h5>Fecha: {work.date}</h5>
+                <h5>Descripción: {work.description}</h5>
             </div>
         </div>
     ))
     return (
         <div className="work-gallery-container">
             <section className="work-gallery">
-                <h3 className="work-gallery-title">{props.name}</h3>
+                <h3 className="work-gallery-title">{name}</h3>
                 <div className="gallery">
-                    {works}
+                    {workCards}
                 </div>
             </section>
             <Footer/>
