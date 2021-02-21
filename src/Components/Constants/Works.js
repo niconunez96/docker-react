@@ -1,13 +1,14 @@
-import Image1 from '../../images/works/pipe-wire/colocacion-tubos-cables-1.jpg';
-import Image2 from '../../images/works/pipe-wire/colocacion-tubos-cables-2.jpg';
-import Image3 from '../../images/works/pipe-wire/colocacion-tubos-cables-3.jpg';
-import Image4 from '../../images/works/pipe-wire/colocacion-tubos-cables-4.jpg';
-import Image5 from '../../images/works/pipe-wire/colocacion-tubos-cables-5.jpg';
-import Image6 from '../../images/works/pipe-wire/colocacion-tubos-cables-6.jpg';
-import Image7 from '../../images/works/pipe-wire/colocacion-tubos-cables-7.jpg';
-import Image8 from '../../images/works/pipe-wire/colocacion-tubos-cables-8.jpg';
-import Image9 from '../../images/works/pipe-wire/colocacion-tubos-cables-9.jpg';
-import Image10 from '../../images/works/pipe-wire/colocacion-tubos-cables-10.jpg';
+import PIPWIRE_IMAGE_1 from '../../images/works/pipe-wire/colocacion-tubos-cables-1.jpg';
+import PIPWIRE_IMAGE_2 from '../../images/works/pipe-wire/colocacion-tubos-cables-2.jpg';
+import PIPWIRE_IMAGE_3 from '../../images/works/pipe-wire/colocacion-tubos-cables-3.jpg';
+import PIPWIRE_IMAGE_4 from '../../images/works/pipe-wire/colocacion-tubos-cables-4.jpg';
+import PIPWIRE_IMAGE_5 from '../../images/works/pipe-wire/colocacion-tubos-cables-5.jpg';
+import PIPWIRE_IMAGE_6 from '../../images/works/pipe-wire/colocacion-tubos-cables-6.jpg';
+import PIPWIRE_IMAGE_7 from '../../images/works/pipe-wire/colocacion-tubos-cables-7.jpg';
+import PIPWIRE_IMAGE_8 from '../../images/works/pipe-wire/colocacion-tubos-cables-8.jpg';
+import PIPWIRE_IMAGE_9 from '../../images/works/pipe-wire/colocacion-tubos-cables-9.jpg';
+import PIPWIRE_IMAGE_10 from '../../images/works/pipe-wire/colocacion-tubos-cables-10.jpg';
+import PIPWIRE_IMAGE_11 from '../../images/works/pipe-wire/colocacion-tubos-cables-11.jpg';
 
 import Image11 from '../../images/works/street/cruce-calle-1.jpg';
 import Image12 from '../../images/works/street/cruce-calle-2.jpg';
@@ -25,7 +26,7 @@ import Image20 from '../../images/works/chambers/camaras8.jpeg'
 export const WIRE_PIPES = [
     {
         'id': 1,
-        'imageUrl': Image1,
+        'imageUrl': PIPWIRE_IMAGE_1,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -33,7 +34,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 2,
-        'imageUrl': Image2,
+        'imageUrl': PIPWIRE_IMAGE_2,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -41,7 +42,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 3,
-        'imageUrl': Image3,
+        'imageUrl': PIPWIRE_IMAGE_3,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -49,7 +50,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 4,
-        'imageUrl': Image4,
+        'imageUrl': PIPWIRE_IMAGE_4,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -57,7 +58,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 5,
-        'imageUrl': Image5,
+        'imageUrl': PIPWIRE_IMAGE_5,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -65,7 +66,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 6,
-        'imageUrl': Image6,
+        'imageUrl': PIPWIRE_IMAGE_6,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -73,7 +74,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 7,
-        'imageUrl': Image7,
+        'imageUrl': PIPWIRE_IMAGE_7,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -81,7 +82,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 8,
-        'imageUrl': Image8,
+        'imageUrl': PIPWIRE_IMAGE_8,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -89,7 +90,7 @@ export const WIRE_PIPES = [
     },
     {
         'id': 9,
-        'imageUrl': Image9,
+        'imageUrl': PIPWIRE_IMAGE_9,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
@@ -97,7 +98,15 @@ export const WIRE_PIPES = [
     },
     {
         'id': 10,
-        'imageUrl': Image10,
+        'imageUrl': PIPWIRE_IMAGE_10,
+        'location': "Centro",
+        'date': "01-03-2020",
+        'title': "Cableado",
+        'description': "Sin descripción"
+    },
+    {
+        'id': 11,
+        'imageUrl': PIPWIRE_IMAGE_11,
         'location': "Centro",
         'date': "01-03-2020",
         'title': "Cableado",
